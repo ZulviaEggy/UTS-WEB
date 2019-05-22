@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-class Australian extends Component {
+class Pagination extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -7,15 +7,15 @@ class Australian extends Component {
         };
     }
     componentDidMount(){
-        fetch("https://randomuser.me/api/?nat=gb&results=9")
+        fetch("https://randomuser.me/api/?page=3&results=10&seed=abc")
         .then(res=> res.json())
         .then(parsedJSON => parsedJSON.results.map(data=>(
             {
                 id: `${data.id.name}`,
                 firstName: `${data.name.first}`,
                 LastName: `${data.name.last}`,
-                email : `${data.email}`,
-                thumbnail: `${data.picture.large}`,
+                age : `${data.dob.age}`,
+                thumbnail: `${data.picture.medium}`,
                 password : `${data.login.password}`,
             }
         )))
@@ -33,13 +33,13 @@ class Australian extends Component {
                 <div className="boxWhite">
                 {
                     items.length > 0 ? items.map(item => {
-                        const {id, firstName, LastName, email, thumbnail, password} = item;
+                        const {id, firstName, LastName, age, thumbnail, password} = item;
                         return(
                             <div key={id} className="bgCircle">
                             <center><img src={thumbnail} alt={firstName} className="circle"/></center><br />
                             <div className="ctr">
                                 {firstName} {LastName} <br/ >
-                               {email} <br/>
+                               {age} <br/>
                                {password} 
                             </div>
                      </div>
@@ -51,4 +51,4 @@ class Australian extends Component {
         
     }
 }
-export default Australian;
+export default Pagination;

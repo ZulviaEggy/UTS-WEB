@@ -4,6 +4,7 @@ import Home from "./Home.js";
 import Male from "./Male";
 import Female from "./Female";
 import Australian from "./Australian";
+import Pagination from "./Pagination";
 import './Style.css';
 
 class Main extends Component {
@@ -18,6 +19,7 @@ class Main extends Component {
                         <li><NavLink exact to="/male">Male</NavLink></li>
                         <li><NavLink exact to="/female">Female</NavLink></li>
                         <li><NavLink exact to="/australian">Australian</NavLink></li>
+                        <li><NavLink exact to="/pagination">Pagination</NavLink></li>
 
 
                        
@@ -28,6 +30,7 @@ class Main extends Component {
                         <Route exact path="/male" component={Male}/>
                         <Route exact path="/female" component={Female}/>
                         <Route exact path="/australian" component={Australian}/>
+                        <Route exact path="/pagination" component={Pagination}/>
 
                         
                     </div>
