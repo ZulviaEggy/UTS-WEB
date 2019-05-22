@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+	
+  }
+  
+  a,
+  a:visited {
+    outline: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .nav {
+    margin: 20px auto;
+    max-width: 48em;
+    border: 1px solid #333;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+  }
+  
+  .menu {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: background .15s ease-in;
+	
+  }
+  
+  .menu:hover {
+    background: #ddd;
+  }
+  .menu.is-active{
+    background:#ddd;
+  }
+  
+  .Merah.is-active {
+	  background: rgb(255, 0, 98);
+  }
+  .Merah.selected {
+	  background: rgb(255, 0, 98);
+  }
+  .Kuning.is-active {
+	  background: yellow;
+  }
+  .Kuning.selected {
+	  background: yellow;
+  }
+  .Hijau.is-active {
+	  background:rgb(129, 250, 81);
+  }
+  .Hijau.selected {
+	  background:rgb(129, 250, 81);
+  }
+  .Biru.is-active{
+	  background:aqua;
+  }
+  .Biru.selected{
+	  background:aqua;
+  }
+  .Ungu.is-active {
+    background: purple;
+  }
+  .Ungu.selected {
+    background: purple;
+  }
+  .Pink.is-active {
+    background: pink;
+  }
+  .Pink.selected {
+    background: pink;
+  }
+
+  .info {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .selected {
+    margin-left: 5px;
+    padding: 5px 10px;
+    vertical-align: middle;
+    border-radius: 4px;
+    background: #ddd;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
